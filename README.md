@@ -53,6 +53,17 @@ The pipeline was rigorously benchmarked against a baseline Regex filter. Below a
 1. **Paraphrased Accuracy:** The framework detected 66.7% of paraphrased attacks. Extremely subtle, highly-contextual paraphrasing can still slip past the embedding layer if the vocabulary diverges too far from the exemplar bank.
 2. **Sandbox Overhead:** Relying on subprocesses or microVMs for the decryption step adds execution overhead.
 3. **Judge Latency:** If an input falls into the "escalation margin", calling an external LLM Judge adds seconds of latency, requiring careful threshold tuning.
+   
+##✅ Proposed Solutions to Overcome Known Limitations
+1. Paraphrased Accuracy (66.7%)
+ Add 100+ paraphrased variations to the dataset.
+Use intent-based detection, not just word embeddings.
+Apply adversarial training with synonym replacement.
+3. Sandbox Overhead
+   Use conditional sandboxing - only for high-entropy payloads, not all inputs.
+   Replace microVM with lightweight isolation like gVisor or WASM.
+3.Judge Latency (seconds)Replace external GPT-4o-mini with a local small model like Phi-3 or Llama 3 8B.Tune escalation threshold
+- call judge only for very borderline cases.Enable caching for repeated similar prompts.
 
 ## 🚀 Setup & Usage
 
