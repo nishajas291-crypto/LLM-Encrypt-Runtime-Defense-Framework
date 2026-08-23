@@ -59,9 +59,11 @@ The pipeline was rigorously benchmarked against a baseline Regex filter. Below a
  Add 100+ paraphrased variations to the dataset.
 Use intent-based detection, not just word embeddings.
 Apply adversarial training with synonym replacement.
+
 **2. Sandbox Overhead**
    Use conditional sandboxing - only for high-entropy payloads, not all inputs.
    Replace microVM with lightweight isolation like gVisor or WASM.
+   
 **3.Judge Latency (seconds)**
 Replace external GPT-4o-mini with a local small model like Phi-3 or Llama 3 8B.
 Tune escalation threshold-call judge only for very borderline cases.
