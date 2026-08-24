@@ -57,7 +57,7 @@ repository's code (no modifications). Terminal output below for verification:
 ![Benchmark Run Output](https://github.com/nishajas291-crypto/LLM-Encrypt-Runtime-Defense-Framework/blob/310d3d299ee9210285724c7a19d4d5696adf2b23/Proof/Benchmark%20Result.png)
 
 *Environment: Python 3.11, `sentence-transformers==2.7.0`, `all-mpnet-base-v2` model, 
-run on [date] via local venv. Full log includes per-sample decryption timing and 
+run on [23/08/2026] via local venv. Full log includes per-sample decryption timing and 
 entropy-screen strip events (visible above the results block).*
 
 ## ⚠️ Known Limitations
