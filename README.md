@@ -63,8 +63,6 @@ repository's code (no modifications). Terminal output below for verification:
   <img src="https://github.com/nishajas291-crypto/LLM-Encrypt-Runtime-Defense-Framework/blob/7c1367045635cf7ed9c2106e8f7b9a6d71acd48f/Proof/BR.png?raw=true" alt="Benchmark Cropped Output" width="700">
 </p>
 
-![Benchmark Run Output](https://github.com/nishajas291-crypto/LLM-Encrypt-Runtime-Defense-Framework/blob/310d3d299ee9210285724c7a19d4d5696adf2b23/Proof/Benchmark%20Result.png)
- ![Benchmark Run Output](https://github.com/nishajas291-crypto/LLM-Encrypt-Runtime-Defense-Framework/blob/7c1367045635cf7ed9c2106e8f7b9a6d71acd48f/Proof/BR.png)
 
 ## ⚠️ Known Limitations
 1. **Paraphrased Accuracy:** The framework detected 66.7% of paraphrased attacks. Extremely subtle, highly-contextual paraphrasing can still slip past the embedding layer if the vocabulary diverges too far from the exemplar bank.
