@@ -98,8 +98,9 @@ python build_dataset.py
 # 3. Run Benchmark
 python benchmark.py
 ```
+## Requirements
 
-```Requirements
+```
 sentence-transformers==2.7.0
 nltk==3.8.1
 openai==1.35.0
