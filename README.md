@@ -101,6 +101,7 @@ python benchmark.py
 ## Requirements
 
 ```
+Python==3.11
 sentence-transformers==2.7.0
 nltk==3.8.1
 openai==1.35.0
