@@ -92,6 +92,18 @@ python3 -m venv venv
 source venv/bin/activate
 pip install sentence-transformers nltk openai datasets pandas numpy
 
+```
+```Requirements
+sentence-transformers==2.7.0
+nltk==3.8.1
+openai==1.35.0
+datasets==2.20.0
+pandas==2.2.2
+numpy==1.26.4
+
+```
+
+
 # 2. Build Dataset (Pulls HuggingFace Exemplars)
 python build_dataset.py
 
